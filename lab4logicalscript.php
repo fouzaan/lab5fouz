@@ -29,42 +29,68 @@ $not = !$var1;
 $xor1 = $var1 xor $var2;
 $xor2 = $var1 xor $var3;
 ?>
-<h3><?php echo $title?></h3>
+<h3>
+	<?php echo $title ?>
+</h3>
 <p> there are logical operators such as && || etc</p>
 
 <h3>PHP Logical Operator Table in HTML</h3>
-	<table>
-		<thead>
-			<tr>
-				<th>Operator</th>
-				<th>Result</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><?php echo $var1 ? 'true' : 'false'; ?> && <?php echo $var2 ? 'true' : 'false'; ?></td>
-				<td><?php echo $and ? 'true' : 'false'; ?></td>
-			</tr>
-			<tr>
-				<td><?php echo $var1 ? 'true' : 'false'; ?> || <?php echo $var2 ? 'true' : 'false'; ?></td>
-				<td><?php echo $or ? 'true' : 'false'; ?></td>
-			</tr>
-			<tr>
-				<td>!<?php echo $var1 ? 'true' : 'false'; ?></td>
-				<td><?php echo $not ? 'true' : 'false'; ?></td>
-			</tr>
-			<tr>
-				<td><?php echo $var1 ? 'true' : 'false'; ?> xor <?php echo $var2 ? 'true' : 'false'; ?></td>
-				<td><?php echo $xor1 ? 'true' : 'false'; ?></td>
-			</tr>
-			<tr>
-				<td><?php echo $var1 ? 'true' : 'false'; ?> xor <?php echo $var3 ? 'true' : 'false'; ?></td>
-				<td><?php echo $xor2 ? 'true' : 'false'; ?></td>
-			</tr>
-		</tbody>
-	</table>
+<table>
+	<thead>
+		<tr>
+			<th>Operator</th>
+			<th>Result</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<?php echo $var1 ? 'true' : 'false'; ?> &&
+				<?php echo $var2 ? 'true' : 'false'; ?>
+			</td>
+			<td>
+				<?php echo $and ? 'true' : 'false'; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<?php echo $var1 ? 'true' : 'false'; ?> ||
+				<?php echo $var2 ? 'true' : 'false'; ?>
+			</td>
+			<td>
+				<?php echo $or ? 'true' : 'false'; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>!
+				<?php echo $var1 ? 'true' : 'false'; ?>
+			</td>
+			<td>
+				<?php echo $not ? 'true' : 'false'; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<?php echo $var1 ? 'true' : 'false'; ?> xor
+				<?php echo $var2 ? 'true' : 'false'; ?>
+			</td>
+			<td>
+				<?php echo $xor1 ? 'true' : 'false'; ?>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<?php echo $var1 ? 'true' : 'false'; ?> xor
+				<?php echo $var3 ? 'true' : 'false'; ?>
+			</td>
+			<td>
+				<?php echo $xor2 ? 'true' : 'false'; ?>
+			</td>
+		</tr>
+	</tbody>
+</table>
 <br>
 <a href="lab4.php">Back to Lab 4 Menu</a>
-<?php 
+<?php
 include("./footer.php");
 ?>

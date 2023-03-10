@@ -16,9 +16,13 @@ $banner = '<h1>Lab4 - php escape</h1>';
 include("./header.php");
 ?>
 <br>
-<h3><?php echo $title?></h3>
+<h3>
+    <?php echo $title ?>
+</h3>
 <br>
-<h4>There are many instances when you we want to print a character that is being used as a delimiting character by the interpreter. PHP allows you to 'escape' the interpreter by using a backslash in-front of the character you want the interpreter to skip.</h4>
+<h4>There are many instances when you we want to print a character that is being used as a delimiting character by the
+    interpreter. PHP allows you to 'escape' the interpreter by using a backslash in-front of the character you want the
+    interpreter to skip.</h4>
 <br>
 <code>
     //I want to print a string so I write:<br>
@@ -30,6 +34,6 @@ include("./header.php");
 </code>
 <br>
 <a href="lab4.php">Back to Lab 4 Menu</a>
-<?php 
+<?php
 include("./footer.php");
 ?>

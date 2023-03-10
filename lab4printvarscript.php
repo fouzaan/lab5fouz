@@ -16,35 +16,37 @@ $banner = '<h1>Lab4 - PHP Variables and Data Types</h1>';
 include("./header.php");
 ?>
 <br>
-<h3><?php echo $title?></h3>
+<h3>
+	<?php echo $title ?>
+</h3>
 <br>
 <p>in php we have primary data types such as Integer, Float, String, Boolean, Array </p>
 <?php
-	// Define some variables with different data types
-	$myString = "Hello, world!";
-	$myNumber = 42;
-	$myBoolean = true;
-	$myArray = array("apple", "banana", "cherry");
+// Define some variables with different data types
+$myString = "Hello, world!";
+$myNumber = 42;
+$myBoolean = true;
+$myArray = array("apple", "banana", "cherry");
 
-	// Create an HTML table to display the variables
-	echo "<table>\n";
-	echo "<tr><th>Variable</th><th>Data Type</th><th>Value</th></tr>\n";
-	echo "<tr><td>myString</td><td>string</td><td>$myString</td></tr>\n";
-	echo "<tr><td>myNumber</td><td>integer</td><td>$myNumber</td></tr>\n";
-	echo "<tr><td>myBoolean</td><td>boolean</td><td>$myBoolean</td></tr>\n";
-	echo "<tr><td>myArray</td><td>array</td><td>" . implode(", ", $myArray) . "</td></tr>\n";
-	echo "</table>\n";
+// Create an HTML table to display the variables
+echo "<table>\n";
+echo "<tr><th>Variable</th><th>Data Type</th><th>Value</th></tr>\n";
+echo "<tr><td>myString</td><td>string</td><td>$myString</td></tr>\n";
+echo "<tr><td>myNumber</td><td>integer</td><td>$myNumber</td></tr>\n";
+echo "<tr><td>myBoolean</td><td>boolean</td><td>$myBoolean</td></tr>\n";
+echo "<tr><td>myArray</td><td>array</td><td>" . implode(", ", $myArray) . "</td></tr>\n";
+echo "</table>\n";
 ?>
 <p> the above script runs as follows</p>
-<?php 
+<?php
 echo $myString;
-echo'<br>';
+echo '<br>';
 echo $myNumber;
-echo'<br>';
+echo '<br>';
 echo $myBoolean;
 ?>
 <br>
 <a href="lab4.php">Back to Lab 4 Menu</a>
-<?php 
+<?php
 include("./footer.php");
 ?>

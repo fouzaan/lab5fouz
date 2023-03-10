@@ -15,8 +15,12 @@ $date = "February 15, 2023";
 $banner = '<h1>Lab4</h1>';
 include("./header.php");
 ?>
-<h3><?php echo $title?></h3>
-<h4><?php echo $description?></h4>
+<h3>
+    <?php echo $title ?>
+</h3>
+<h4>
+    <?php echo $description ?>
+</h4>
 <ul>
     <li><a href="lab4phptags.php">PHP Start and End Tags</a></li>
     <li><a href="lab4firstscript.php">Code Cohabitation</a></li>
@@ -30,6 +34,6 @@ include("./header.php");
     <li><a href="lab4comparisonscript.php">Comparison Operators</a></li>
     <li><a href="lab4logicalscript.php">Logical Operators</a></li>
 </ul>
-<?php 
+<?php
 include("./footer.php");
 ?>

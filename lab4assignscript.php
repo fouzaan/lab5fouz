@@ -17,30 +17,34 @@ include("./header.php");
 ?>
 <br>
 
-<h3><?php echo $title?></h3>
+<h3>
+    <?php echo $title ?>
+</h3>
 <p>As with any language PHP has the normal mechanisms for assigning values to variables.</p>
 <table>
-    <tbody><tr>
-        <th>Operator</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>=</td>
-        <td>Assigns a value to a variable.</td>
-    </tr>
-    <tr>
-        <td>+=</td>
-        <td>Adds the new value to the value already in the variable</td>
-    </tr>
-    <tr>
-        <td>-=</td>
-        <td>Subtracts the new value from the value already in the variable</td>
-    </tr>
-    <tr>
-        <td>.=</td>
-        <td>For strings, concatenates the new value to the string already in the variable</td>
-    </tr>
-</tbody></table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>Assigns a value to a variable.</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>Adds the new value to the value already in the variable</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>Subtracts the new value from the value already in the variable</td>
+        </tr>
+        <tr>
+            <td>.=</td>
+            <td>For strings, concatenates the new value to the string already in the variable</td>
+        </tr>
+    </tbody>
+</table>
 <p>Here is an example of these operators:</p>
 <br>
 <code>
@@ -53,30 +57,30 @@ include("./header.php");
     $counter .= "mango";<br>
     echo "&lt;p&gt;Final answer: $counter&lt;/p&gt;";<br>
 </code>
-<p>The above code produces the following:  </p>
+<p>The above code produces the following: </p>
 <?php
-			// Initialize a variable with a value
-			$counter = 100;
-            echo $counter;
-			// Use the ++ operator to increment the value of $counter by 1
-			$counter+= 7;
-            echo "<br>";
-            echo "7 is added using the operator += 7, now the counter value is $counter";
-			// Use the -= operator to subtract 2 from the value of $counter
-			$counter -= 2;
-            echo "<br>";
-             echo "2 is substracted using the operator -= 2, now the counter value is $counter";
-			// Use the *= operator to multiply the value of $counter by 5
-			$counter .= " mango";
-            echo "<br>";
-            echo "mongo is concatenated using the operator .= mango, now the counter value is $counter";
-			// final answer
-             echo "<br>";
-             echo "final answer $counter"
-		?>
+// Initialize a variable with a value
+$counter = 100;
+echo $counter;
+// Use the ++ operator to increment the value of $counter by 1
+$counter += 7;
+echo "<br>";
+echo "7 is added using the operator += 7, now the counter value is $counter";
+// Use the -= operator to subtract 2 from the value of $counter
+$counter -= 2;
+echo "<br>";
+echo "2 is substracted using the operator -= 2, now the counter value is $counter";
+// Use the *= operator to multiply the value of $counter by 5
+$counter .= " mango";
+echo "<br>";
+echo "mongo is concatenated using the operator .= mango, now the counter value is $counter";
+// final answer
+echo "<br>";
+echo "final answer $counter"
+    ?>
 <br>
 <br>
 <a href="lab4.php">Back to Lab 4 Menu</a>
-<?php 
+<?php
 include("./footer.php");
 ?>

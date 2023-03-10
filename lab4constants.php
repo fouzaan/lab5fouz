@@ -15,30 +15,32 @@ $date = "February 15, 2023";
 $banner = '<h1>Lab4 - Using Constants</h1>';
 include("./header.php");
 ?>
-<h3><?php echo $title?></h3>
+<h3>
+	<?php echo $title ?>
+</h3>
 <br>
 <p>In PHP you can define constants with the keyword 'define'. That looks like this:</p>
 <br>
 <code>
-    define("MYCONSTANT", "This is a test of defining constants.");
+	define("MYCONSTANT", "This is a test of defining constants.");
 </code>
 <br>
 <br>
 <?php
-	// Define a constant for the value of pi
-	define("PI", 3.14159);
+// Define a constant for the value of pi
+define("PI", 3.14159);
 
-	// Use the constant in calculations
-	$radius = 5;
-	$circumference = 2 * PI * $radius;
+// Use the constant in calculations
+$radius = 5;
+$circumference = 2 * PI * $radius;
 
-	// Output the result
-	echo "The circumference of a circle with radius $radius is $circumference. here I have defined PI as a constant";
-    echo "<br>";
-    echo "<br>";
+// Output the result
+echo "The circumference of a circle with radius $radius is $circumference. here I have defined PI as a constant";
+echo "<br>";
+echo "<br>";
 ?>
 <br>
 <a href="lab4.php">Back to Lab 4 Menu</a>
-<?php 
+<?php
 include("./footer.php");
 ?>

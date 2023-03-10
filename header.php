@@ -46,6 +46,7 @@
 				<li><a href="./lab3.php">Lab 3: Formatting and Layout with Styles</a></li>
 				<li><a href="./termtest1.php">Term Test 1: Mid tearm examination 1</a></li>
 				<li><a href="./lab4.php">Lab 4: PHP Chapter Files from textbook</a></li>
+				<li><a href="./lab5.php">Lab 5: PHP Calculator</a></li>
 			</ul>
 		</div>
 		<div id="content">
