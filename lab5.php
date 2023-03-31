@@ -28,7 +28,6 @@ include("./header.php");
     <li><a href="lab5_simple_temp_convert.php">Temprature calculator</a></li>
     <li><a href="lab5_function_temp_convert.php"> Temprature calculator with functions</a></li>
 </ul>
-<a href="lab5.php">Back to Lab 5 Menu</a>
 <?php
 include("./footer.php");
 ?>

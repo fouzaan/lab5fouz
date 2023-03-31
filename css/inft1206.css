@@ -184,3 +184,19 @@ You can cut and paste this at the bottom of your existing css file, and when use
 #footer img {
   vertical-align: middle;
 }
+
+.Main_table_width {
+  width: 75%;
+}
+.Auto_Table_elenment_size {
+  width: 20%;
+}
+.Bond_info_elenment_size_first {
+  width: 50%;
+}
+.Bond_info_elenment_size_secound {
+  width: 15%;
+}
+.Bond_info_elenment_size_third {
+  width: 35%;
+}
