@@ -37,38 +37,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (strlen($id) < MINIMUM_ID_LENGTH) {
         $error .= "Please enter a valid ID. which length is grater than 5<br/>";
         $id = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $email = "" . $email . "";
     } elseif (strlen($id) > MAXIMUM_ID_LENGTH) {
         $error .= "Please enter a valid ID. which length is less than 20<br/>";
         $id = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $email = "" . $email . "";
     } elseif (strlen($id) == 0) {
         $error .= "id can not be empty <br/>";
         $id = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $email = "" . $email . "";
     } else {
         $sql = "SELECT * FROM users WHERE id = '" . $id . "'";
         $results = pg_query($conn, $sql);
         if (!pg_num_rows($results)) {
             $error .= "id already exists<br/>";
             $id = "";
-            $password = "" . $password . "";
-            $pass_confirm = "" . $pass_confirm . "";
-            $fname = "" . $fname . "";
-            $lname = "" . $lname . "";
-            $email = "" . $email . "";
         } else {
             $error = "";
         }
@@ -76,113 +56,46 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($fname == "") {
         $error .= "Please enter a valid first name. it can not be empty<br/>";
-        $fname = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
+        $lname = "";
     } elseif (is_numeric($fname) == true) {
         $error .= "Please enter a valid first name. it can not be a number<br/>";
-        $fname = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
+        $lname = "";
     } elseif (strlen($fname) >= MAX_FIRST_NAME_LENGTH) {
         $error .= "Please enter a valid first name. it can more than 20 charectors<br/>";
-        $fname = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
+        $lname = "";
     }
 
     if ($lname == "") {
         $error .= "Please enter a valid last name. it can not be empty<br/>";
-        $lname = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (is_numeric($lname) == true) {
         $error .= "Please enter a valid first name. it can not be a number<br/>";
-        $lname = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (strlen($lname) >= MAX_LAST_NAME_LENGTH) {
         $error .= "Please enter a valid last name. it can more than 20 charectors<br/>";
-        $lname = "";
-        $password = "" . $password . "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     }
 
 
     if (strlen($password) <= MINIMUM_PASSWORD_LENGTH) {
         $error .= "Please enter a valid password. which length is grater than 6<br/>";
         $password = "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (strlen($pass_confirm) <= MINIMUM_PASSWORD_LENGTH) {
         $error .= "Please enter a valid confirm password. which is grater than 6<br/>";
         $pass_confirm = "";
-        $password = "" . $password . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (strlen($password) >= MAXIMUM_PASSWORD_LENGTH) {
         $error .= "Please enter a valid password. which length is smaller than 15<br/>";
         $password = "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (strlen($pass_confirm) >= MAXIMUM_PASSWORD_LENGTH) {
         $error .= "Please enter a valid confirm password. which length is smaller than 15<br/>";
         $pass_confirm = "";
-        $password = "" . $password . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif ($password != $pass_confirm) {
         $error .= " Password and confirm password should be same<br/>";
         $password = "";
         $pass_confirm = "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (strlen($password) == 0) {
         $error .= "Password should not be empty<br/>";
         $password = "";
-        $pass_confirm = "" . $pass_confirm . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     } elseif (strlen($pass_confirm) == 0) {
         $error .= "confirm Password should not be empty <br/>";
         $pass_confirm = "";
-        $password = "" . $password . "";
-        $fname = "" . $fname . "";
-        $lname = "" . $lname . "";
-        $id = "" . $id . "";
-        $email = "" . $email . "";
     }
 
     //email validation
