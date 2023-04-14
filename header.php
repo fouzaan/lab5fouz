@@ -1,3 +1,7 @@
+<?php
+require("./includes/functions.php");
+ob_start();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -52,6 +56,8 @@
 						<li><a href="./lab5.php">Lab 5: PHP Calculator</a></li>
 						<li><a href="./lab6.php">Lab 6 example: PHP Calculator sticky form</a></li>
 						<li><a href="./lab7.php">Lab 7 example: Database intro</a></li>
+						<li><a href="./lab9.php">Lab 9: Login Page</a></li>
+						<li><a href="./lab10.php">Lab 10: email Page</a></li>
 					</ul>
 				</div>
 				<div id="content">

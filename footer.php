@@ -13,7 +13,7 @@
         			    		src="http://jigsaw.w3.org/css-validator/images/vcss"
 								alt="Valid CSS!" />
     			</a>
-				&copy; Fouzaan, 2023
+			<?php 	displayCopyright(); ?>
 		<!-- end of footer -->
 		</div>
 	</div>

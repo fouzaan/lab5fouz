@@ -35,7 +35,7 @@ include("./header.php");
     <?php
     $output = ""; //Set up a variable to store the output of the loop 
 //connect
-    $conn = pg_connect("host=127.0.0.1 dbname=nissarf_db user=nissarf password=100857977");
+    $conn = pg_connect("host=127.0.0.1 dbname=nissarf_db user=nissarf password=nissarf");
     //N.B. replace the YOUR variables with your specific information
 //NOTE: "host=localhost..." SHOULD work, but if there is a problem with the config on opentech, use 127.0.0.1 instead
     

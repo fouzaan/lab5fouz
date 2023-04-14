@@ -1,6 +1,6 @@
 /* 
 Author: Fouzaan
-file: lab7_bond_movies.sql 
+file: lab7_auto_records.sql 
 Date: 2023-03-31
 Course: INFT1206
 Contact: fouzaan.shaiknissar@dcmail.ca
